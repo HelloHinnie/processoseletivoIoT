@@ -285,10 +285,7 @@ def verificar_porta(estado_botao):
 
 def verificar_temperatura(estado_botao, temp_atual):
     global temp_referencia, alarme_termico_disparado, em_alerta
-    
-    if estado_botao == 1 and not alarme_termico_disparado:
-        temp_referencia = temp_atual
-        
+
     delta_t = temp_atual - temp_referencia
     
     if delta_t >= LIMITE_VARIACAO_Y and not alarme_termico_disparado:

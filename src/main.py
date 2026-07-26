@@ -12,6 +12,7 @@ porta_aberta = False
 tempo_inicio = 0
 temp_referencia = 0.0
 
+
 alarme_porta_disparado = False 
 alarme_termico_disparado = False
 em_alerta = False 

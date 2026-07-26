@@ -1,7 +1,7 @@
 import machine
 import time
 #Biblioteca do MPU6050
-from mpu6050 import MPU6050 
+import mpu6050
 
 #Constantes
 LIMITE_TEMPO_X = 5000      
@@ -20,7 +20,7 @@ em_alerta = False
 #Inicialização do hardware, uma instância do MPU6050 denominada 'imu1' e um botão
 #O PULL_DOWN força a leitura 0 quando solto. Quando o botão  é pressionado, o 3V3 chega e ele lê 1.
 btn1 = machine.Pin(12, machine.Pin.IN, machine.Pin.PULL_DOWN)
-imu1 = MPU6050()
+imu1 = mpu6050.MPU6050()
 
 #Inicializa o sistema, lendo uma temperatura inicial para ser mais preciso
 def inicializar_sistema():

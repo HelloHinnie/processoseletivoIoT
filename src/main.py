@@ -1,5 +1,6 @@
 import machine
 import time
+#Biblioteca do MPU6050
 from mpu6050 import MPU6050 
 
 #Constantes

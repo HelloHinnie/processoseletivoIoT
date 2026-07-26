@@ -76,6 +76,7 @@ def verificar_normalizacao(estado_botao, temp_atual):
 
 inicializar_sistema()
 
+#Verifica a cada iteração
 while True:
     #Captura o estado atual dos sensores apenas uma vez por ciclo
     estado_botao_atual = btn1.value()
